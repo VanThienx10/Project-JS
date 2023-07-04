@@ -1,0 +1,23 @@
+{
+  "bill": [
+    {
+      "id": "v1cj5r6hyw",
+      "fullname": "Thiện Nguyễn",
+      "date": "4/7/2023",
+      "numberItem": 1,
+      "totalItem": 1,
+      "totalPrice": 2000,
+      "address": "dada , Phường Đức Giang , Quận Long Biên , Thành phố Hà Nội",
+      "detail": [
+        {
+          "id": 3,
+          "image": "./asset/img/anh3.jpg",
+          "name": "Nike Air Force Mid 09",
+          "price": 2000,
+          "soluong": 1,
+          "total": 2000
+        }
+      ]
+    }
+  ]
+}

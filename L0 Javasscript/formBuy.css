@@ -1,0 +1,175 @@
+
+:root{
+    --red: red;
+}
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.required{
+    color: var(--red)
+}
+
+label{
+    margin-bottom: 0.3rem;
+}
+
+#form-infoBuyer{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    min-width: 42rem;
+}
+
+.header-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-elements input,
+textarea{
+    padding: .5rem;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    width: 100%;
+    resize: none;
+}
+
+.message{
+    height: 9rem;
+    margin-bottom: 0;
+}
+
+.last-name{
+    margin-right: 3rem;
+}
+
+.full-name-input{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.validate{
+    color: var(--red);
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -1.2rem;
+}
+
+.full-name-input .input-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.select-address{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.select{
+    width: 30%;
+    font-size: .8rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.select-value-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    min-width: 12rem;
+}
+
+option{
+    height: 1.2rem;
+    border-bottom: 1px solid #333;
+}
+
+.drop-down{
+    padding-left: 0.4rem;
+    border-left: 1px solid #000;
+}
+
+.close-form{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.close-form:hover{
+    color: var(--red)
+}
+
+.form-btns{
+    display: flex;
+    justify-content: flex-end;
+}
+.form-btn{
+    padding:0.6rem 0.9rem;
+    color: white;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 0 0;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s;
+}
+
+.note{
+    float: left;
+    font-size: 1rem;
+}
+
+.note span{
+    font-size: 0.8rem;
+}
+
+.form-btn ~ .form-btn{
+    margin-left: 1rem;
+}
+
+.cancel-btn{
+    background-color: red;
+}
+
+.accept-btn{
+    background-color: #2C71F3;
+}
+
+.show{
+    display: block !important;
+}
+button{
+    border: none;
+    outline: none;
+}
